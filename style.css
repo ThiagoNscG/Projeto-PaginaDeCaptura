@@ -5,76 +5,101 @@
 }
 
 body{
-    border-left: black solid 300px;
-    border-right: black solid 300px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: black;
 }
 
-.topbar{
-    background-color: #31aed2;
-    height: 50px;
-}
-.topbar-title{
-    color: #fff;
-    padding-top: 5px;
+header{
+    background-color: #48C5CE;
     text-align: center;
-    text-transform: uppercase;
+    color: white;
+    padding: 10px;
 }
-.background{
-    height: 500px;
+.title{
+    font-size: 26px;
+}
+
+section{
+    padding: 20px;
     background-image: url(./images/people.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    overflow: hidden;
 }
-.background-over{
-    background-color: #ffffff8c;
-    width: 350px;
-    height: 450px;
-    position: absolute;
-    top: 75px;
-    right: 325px;
+
+.formContainer{
+    max-width: 230px;
+    background-color: #FFFFFFBB;
+    padding: 20px;
+    float: right;
 }
-.h1-over{
-    padding: 20px 20px 10px 20px;
-    text-transform: uppercase;
-    font-size: 22px;
+
+h2{
+    font-size: 16px;
 }
-.p-over{
-    padding: 10px 20px;
-    font-size: 19px;
+
+.mb{
+    margin-bottom: 15px;
 }
-.input{
-    margin: 5px 20px;
-    width: 85%;
-    height: 30px;
+
+input, select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
     border: none;
-}
-.submit{
-    color: #fff;
-    background-color: #31aed2;
+    margin-bottom: 10px;
 }
 
-.container{
-    height: 400px;
-    background-color: #1f2121;
-}
-.speaker-image{
-    padding: 40px 40px 40px 200px;
-    width: 200px;
-    height: 300px;
-    float: left;
-}
-.h1{
-    color: #fff;
-    padding-top: 40px;
-}
-.content{
-    color: #fff;
-    padding-top: 30px;
-    padding-right: 300px;
+input[type="submit"]{
+    color: white;
+    background-color: #48C5CE;
+    font-weight: bold;
 }
 
-.footer{
-    height: 100px;
-    background-color: #000;
+select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(./images/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10%) center;
+}
+
+footer{
+    background-color: #202121;
+    padding: 40px;
+    text-align: center;
+}
+
+.picture{
+    width: 160px;
+
+}
+
+.description{
+    color: white;
+    display: inline-block;
+    max-width: 40%;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.description p, .description h3{
+    margin-bottom: 20px;
+}
+
+.description h3{
+    font-size: 24px;
+}
+
+@media screen and (max-width: 800px) {
+    .formContainer{
+        max-width: 400px;
+    }
+    .picture{
+        padding-bottom: 20px;
+    }
+    .description{
+        display: inline;
+    }
 }
